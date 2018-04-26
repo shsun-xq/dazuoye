@@ -6,3 +6,7 @@
 但这里有个特别的注意事项，就是numpy里头的图片是HxWxC(长x宽x通道)的，而torch里头的tensor却是CxHxW的，这样对应不上。所以得在写data_loader时，把用toTensor整成tensor后的值，进行一个维度的转化 output = output.transpose((2, 0, 1))，这样就好
 
 3、dataset.py 一个简陋的dataLoader
+
+
+数据未划分训练集、测试集，自行划分
+数据下载地址：https://pan.baidu.com/s/1HV56CET2V5e8J7BMrA7YYA 密码：9ap5
